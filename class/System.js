@@ -12,7 +12,7 @@ class MovementSystem extends System {
         super(systemType);
         this.componentRequirements = ["Movement", "Position"];
     }
-    update = () => {
+    update() {
         for (let i = 0; i < this.entities.length; i++) {
             const entity = this.entities[i];
 
