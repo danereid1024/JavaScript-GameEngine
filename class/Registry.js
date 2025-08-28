@@ -54,7 +54,7 @@ class Registry {
                 break;
             }
             case "RenderSystem": {
-                newSystem = RenderSystem(systemType);
+                newSystem = new RenderSystem(systemType);
                 break;
             }
             default: {

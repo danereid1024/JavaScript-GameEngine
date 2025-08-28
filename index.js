@@ -29,6 +29,7 @@ class Game {
         };
 
         this.registry.addSystem("MovementSystem");
+        this.registry.addSystem("RenderSystem")
 
         const dummyPositionComponent = {
             name: "Position",
@@ -62,6 +63,7 @@ class Game {
     // Method to update the game state (called every frame)
     update = () => {
         this.registry.getSystem("MovementSystem").update();
+        this.registry.getSystem("RenderSystem").update();
         // Schedule the next update using requestAnimationFrame
         requestAnimationFrame(this.update)
     }
